@@ -1,0 +1,14 @@
+
+<h2>Dashboard</h2>
+<form method="post" action="/account">
+<input name="website" placeholder="Website">
+<input name="username" placeholder="Username">
+<input name="password" placeholder="Password">
+<button>Add</button>
+</form>
+<h3>Accounts</h3>
+<ul>
+<% accounts.forEach(a=>{ %>
+<li><%= a.website %> - <%= a.strength %></li>
+<% }) %>
+</ul>
